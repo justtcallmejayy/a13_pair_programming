@@ -1,0 +1,68 @@
+<!-- Author 1: Mason Tehrani, 001241528 -->
+<!-- Author 2: Jay Choksi, 000887533å -->
+<!-- Author 3: ,  Marita Aziga, 000368577-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 13 math quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Math Quiz App</h1>
+
+    <form id="quizDiff">
+      <div id="difficulty">
+        <h2>Choose Difficulty</h2>
+
+        <input type="radio" id="easy" name="RBdiff" value="50" checked />
+        <label for="easy">Easy </label><br />
+
+        <input type="radio" id="medium" name="RBdiff" value="1000" />
+        <label for="medium">Medium</label><br />
+
+        <input type="radio" id="hard" name="RBdiff" value="10000" />
+        <label for="hard">Hard</label>
+
+        <h2 id="H2diff">Chosen Difficulty:</h2>
+
+        <button id="start">Start Quiz</button>
+      </div>
+    </form>
+
+    <!-- Questions text area -->
+    <div id="question">
+      <h2 id="questionText">Question</h2>
+      <p id="lastAnswer"></h2>
+      <h2 id="questionDisplay"></h2>
+
+    </div>
+
+    <div id="score">
+      <h2>Score</h2>
+      <p id="scoreText">0/10</p>
+    </div>
+
+    <div id="answer">
+      <h2>Answer</h2>
+      <div id="submitBox">
+        <!-- <form action="script.js"> -->
+        <input type="text" id="answerInput" />
+        <button id="submitAnswer">Submit</button>
+        <!-- </form> -->
+        <p id = "error" ></p>
+      </div> 
+
+    <!-- 
+    <div id="result">
+      <h2>Result</h2>
+      <p id="resultText"></p>
+    </div> -->
+
+    <div id="reset">
+      <button id="resetButton">Reset</button>
+    </div>
+  </body>
+</html>

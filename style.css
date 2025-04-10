@@ -1,0 +1,198 @@
+body {
+  background-color: #70a9a1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #1f363d;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 5em;
+  color: #1f363d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  margin: 0 auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #1f363d;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+input[type="submit"] {
+  background-color: #1f363d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #2a9d8f;
+}
+input[type="submit"]:active {
+  background-color: #264653;
+}
+input[type="submit"]:disabled {
+  background-color: #2a9d8f;
+  cursor: not-allowed;
+}
+input[type="submit"]:disabled:hover {
+  background-color: #2a9d8f;
+}
+input[type="submit"]:disabled:active {
+  background-color: #2a9d8f;
+}
+input[type="text"]:focus {
+  border-color: #2a9d8f;
+  outline: none;
+}
+input[type="text"]:disabled {
+  background-color: #f0f4f8;
+  cursor: not-allowed;
+}
+
+/* questions */
+#question {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  margin: 20px auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+/* score */
+#score {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  margin: 20px auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+/* answer */
+#answer {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  margin: 20px auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+#submitAnswer {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+/* answer */
+#answerInput {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  margin: 20px auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+/*  */
+
+/* next question */
+#nextQuestion {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  margin: 20px auto;
+  border: 2px solid #1f363d;
+  transition: all 0.5s ease;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+button, #resetButton {
+  background-color: #1f363d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2a9d8f;
+}
+button:active {
+  background-color: #264653;
+}
+button:disabled {
+  background-color: #2a9d8f;
+  cursor: not-allowed;
+}
+button:disabled:hover {
+  background-color: #2a9d8f;
+}
+button:disabled:active {
+  background-color: #2a9d8f;
+}
+/* fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
